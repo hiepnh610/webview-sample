@@ -1,0 +1,19 @@
+<header class="text-center">Angular App</header>
+
+<form [formGroup]="profileForm" class="text-center" (ngSubmit)="onSubmit()">
+  <input
+    type="text"
+    placeholder="Full Name"
+    id="full-name"
+    formControlName="fullName" />
+
+  <button>Submit</button>
+</form>
+
+<div id="container" class="text-center">
+  <div id="text-full-name">
+    <small>Full Name:</small>
+
+    <h2>{{ fullName }}</h2>
+  </div>
+</div>
